@@ -32,6 +32,7 @@ a {
 
 p {
     font-family: 'VT323', monospace;
+    font-size: 16px;
     line-height: 25px;
 }
 
@@ -68,5 +69,33 @@ p {
     }
     100% {
         transform: translate(0, 5px);
+    }
+}
+
+@media (min-width: 576px) {
+    p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    p {
+        font-size: 22px;
+        line-height: 33px;
     }
 }
