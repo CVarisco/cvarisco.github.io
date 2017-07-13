@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'fippsregular';
+    src: url('fonts/fipps-regular-webfont.eot');
+    src: url('fonts/fipps-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/fipps-regular-webfont.woff') format('woff'), url('fonts/fipps-regular-webfont.ttf') format('truetype'), url('fonts/fipps-regular-webfont.svg#fippsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fipps_filledregular';
+    src: url('fonts/fippsfilled-regular-webfont.eot');
+    src: url('fonts/fippsfilled-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/fippsfilled-regular-webfont.woff') format('woff'), url('fonts/fippsfilled-regular-webfont.ttf') format('truetype'), url('fonts/fippsfilled-regular-webfont.svg#fipps_filledregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'fippsregular';
+}
+
+a {
+    color: black;
+}
+
+p {
+    font-family: 'VT323', monospace;
+    line-height: 25px;
+}
+
+#container {
+    position: relative;
+    width: 70%;
+    max-width: 600px;
+    margin: 70px auto;
+    text-align: center
+}
+
+.title {
+    -webkit-animation: float-animation 1.5s infinite alternate ease-in-out;
+    -moz-animation: float-animation 1.5s infinite alternate ease-in-out;
+    -o-animation: float-animation 1.5s infinite alternate ease-in-out;
+    animation: float-animation 1.5s infinite alternate ease-in-out;
+}
+
+.contacts {
+    margin: 30px 0 0 0;
+}
+
+.contacts a {
+    margin: 0 20px;
+}
+
+.contacts a img {
+    width: 32px;
+}
+
+@-webkit-keyframes float-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 5px);
+    }
+}
