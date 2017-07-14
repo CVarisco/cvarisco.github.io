@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'gamegirl';
+    src: url('fonts/Gamegirl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'fippsregular';
     src: url('fonts/fipps-regular-webfont.eot');
     src: url('fonts/fipps-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/fipps-regular-webfont.woff') format('woff'), url('fonts/fipps-regular-webfont.ttf') format('truetype'), url('fonts/fipps-regular-webfont.svg#fippsregular') format('svg');
@@ -23,11 +30,14 @@ body {
 }
 
 h1 {
-    font-family: 'fippsregular';
+    font-family: 'gamegirl';
+    padding: 0 0 10px 0;
+    border-bottom: 4px solid white;
 }
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 p {
