@@ -1,3 +1,17 @@
+@font-face {	
+  font-family: 'Fanwood Text';	
+  src: url('fonts/Fanwood_Text/FanwoodText-Regular.ttf') format('truetype');	
+  font-weight: normal;	
+  font-style: normal;	
+}	
+
+@font-face {	
+  font-family: 'Quattrocento';	
+  src: url('fonts/Quattrocento/Quattrocento-Regular.ttf') format('truetype');	
+  font-weight: normal;	
+  font-style: normal;	
+}
+
 body {
   color: #373d3f;
   background-color: #fbfbfb;
@@ -6,7 +20,7 @@ body {
 
 h1 {
   font-family: "Fanwood Text", serif;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 50px;
   line-height: 1em;
   margin-bottom: 0;
