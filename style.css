@@ -15,11 +15,17 @@
 body {
   color: #373d3f;
   background-color: #fbfbfb;
+}
+
+.wf-active body {
   font-family: "Quattrocento", serif;
 }
 
-h1 {
+.wf-active h1 {
   font-family: "Fanwood Text", serif;
+}
+
+h1 {
   font-weight: normal;
   font-size: 50px;
   line-height: 1em;
