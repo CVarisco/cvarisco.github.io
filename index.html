@@ -36,84 +36,116 @@
 
       WebFontConfig = {
         custom: {
-          families: ["Fanwood Text", "Quattrocento"]
+          families: ["Circular Std Book"]
         }
       };
     </script>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       a,
       body {
-        color: #373d3f;
+        color: black;
       }
+
       @font-face {
-        font-family: "Fanwood Text";
-        src: url(fonts/Fanwood_Text/FanwoodText-Regular.ttf) format("truetype");
-        font-weight: 400;
+        font-family: "Circular Std Book";
         font-style: normal;
+        font-weight: normal;
+        src: url("fonts/Circular-std/CircularStd-Book.woff") format("woff");
       }
+
       @font-face {
-        font-family: Quattrocento;
-        src: url(fonts/Quattrocento/Quattrocento-Regular.ttf) format("truetype");
-        font-weight: 400;
+        font-family: "Circular Std Medium";
         font-style: normal;
+        font-weight: normal;
+        src: url("fonts/Circular-std/CircularStd-Medium.woff") format("woff");
       }
+
+      @font-face {
+        font-family: "Circular Std Bold";
+        font-style: normal;
+        font-weight: normal;
+        src: url("fonts/Circular-std/CircularStd-Bold.woff") format("woff");
+      }
+
       body {
-        background-color: #fbfbfb;
+        background-color: white;
+        margin: 0;
+        padding: 0;
       }
       .wf-active body {
-        font-family: Quattrocento, serif;
+        font-family: "Circular Std Book", serif;
       }
       .wf-active h1 {
-        font-family: "Fanwood Text", serif;
+        font-family: "Circular Std Bold", serif;
       }
       h1 {
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 1em;
+        font-size: 59px;
+        line-height: 63px;
         margin-bottom: 0;
       }
       a {
         text-decoration: none;
+        border-bottom: 2px solid black;
       }
       a:hover {
-        text-decoration: underline;
+        border-bottom: 3px solid black;
       }
       p {
-        font-size: 20px;
-        line-height: 1.8em;
+        font-size: 22px;
+        line-height: 34px;
+        width: 60vw;
       }
       #container {
         position: relative;
-        width: 70%;
-        max-width: 650px;
-        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        padding: 40px 30px;
       }
       #contacts {
-        text-align: center;
+        align-self: flex-end;
+        margin-right: 10px;
+        text-align: right;
       }
       #contacts a {
+        padding: 5px 0px;
         margin: 0 10px;
+      }
+
+      @media (max-width: 767px) {
+        #container {
+          width: 90vw;
+        }
+        p {
+          width: 90vw;
+        }
       }
     </style>
   </head>
 
   <body>
     <div id="container">
-      <h1>Christian Varisco</h1>
+      <h1>
+        My name is Christian,<br />
+        developer and tech passionate
+      </h1>
       <p>
-        I am a Software Developer and my aim is to learn everything about web
-        and app development. I have a particular passion to write clean code and
-        I always put all my effort to achieve the most clean, user friendly and
+        I am a Lead Developer and my aim is to learn everything about web and
+        app development. I have a particular passion to write clean code and I
+        always put all my effort to achieve the most clean, user friendly and
         well designed user interface. <br />If I don't know the answer to a
         question, I'll be honest and tell you that I'm not able to answer, but I
         will also do my best to get that answer as soon and as efficiently as
         possible.
       </p>
-      <div id="contacts">
-        <a href="https://twitter.com/chrivarisco"> Twitter </a>
-        <a href="https://www.linkedin.com/in/christianvarisco/"> Linkedin </a>
-        <a href="https://github.com/CVarisco"> Github </a>
-      </div>
+    </div>
+    <div id="contacts">
+      <a href="https://twitter.com/chrivarisco"> Twitter </a>
+      <a href="https://www.linkedin.com/in/christianvarisco/"> Linkedin </a>
+      <a href="https://github.com/CVarisco"> Github </a>
     </div>
   </body>
 </html>
