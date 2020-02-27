@@ -37,11 +37,7 @@
 
       WebFontConfig = {
         custom: {
-          families: [
-            "Circular Std Book",
-            "Circular Std Medium",
-            "Circular Std Bold"
-          ]
+          families: ["Anonymous Pro"]
         }
       };
     </script>
@@ -52,35 +48,24 @@
       a,
       body {
         color: black;
-      }
-      @font-face {
-        font-family: "Circular Std Book";
-        font-style: normal;
-        font-weight: normal;
-        src: url("fonts/Circular-std/CircularStd-Book.woff") format("woff");
-      }
-      @font-face {
-        font-family: "Circular Std Medium";
-        font-style: normal;
-        font-weight: normal;
-        src: url("fonts/Circular-std/CircularStd-Medium.woff") format("woff");
-      }
-      @font-face {
-        font-family: "Circular Std Bold";
-        font-style: normal;
-        font-weight: normal;
-        src: url("fonts/Circular-std/CircularStd-Bold.woff") format("woff");
-      }
-      body {
         background-color: white;
         margin: 0;
         padding: 0;
       }
-      .wf-active body {
-        font-family: "Circular Std Book", serif;
+      @font-face {
+        font-family: "Anonymous Pro";
+        font-style: normal;
+        font-weight: normal;
+        src: url("fonts/AnonymousPro-Regular.ttf") format("truetype");
       }
-      .wf-active h1 {
-        font-family: "Circular Std Bold", serif;
+      @font-face {
+        font-family: "Anonymous Pro";
+        font-style: normal;
+        font-weight: bold;
+        src: url("fonts/AnonymousPro-Bold.ttf") format("truetype");
+      }
+      .wf-active body {
+        font-family: "Anonymous Pro", serif;
       }
       h1 {
         font-size: 59px;
@@ -142,13 +127,16 @@
       <h1>
         My name is Christian
         <img id="emoji" src="emoji.png" alt="emoji" />,<br />
-        developer and tech passionate
       </h1>
       <p>
-        I am a Principal Engineer and my aim is to learn everything about web and
-        app development. I have a particular passion for writing clean code, well architected infrastructure and
-        I always put in all my effort to achieve the most clean, user friendly
-        and well designed user interface. <br />If I don't know the answer to a
+        I am a Principal Engineer currently working at
+        <a href="https://connect.finleap.com/" target="_blank"
+          >finleap connect</a
+        >
+        and my mission is to build and innovate with the best technologies. I
+        have a particular passion for writing clean code, well architected
+        infrastructure and I always put in all my effort to lead people to
+        achieve the best results. <br />If I don't know the answer to a
         question, I'll be honest and tell you that I'm not able to answer, but I
         will also do my best to get that answer as soon and as efficiently as
         possible.
