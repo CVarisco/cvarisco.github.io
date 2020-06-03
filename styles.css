@@ -1,0 +1,37 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Hind';
+  src: url('fonts/Hind-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('fonts/Hind-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('fonts/SofiaProSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SofiaPro';
+  src: url('fonts/SofiaProBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+#hero {
+  height:calc(100vh - 94px)
+}

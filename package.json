@@ -1,0 +1,22 @@
+{
+  "name": "cvarisco.github.io",
+  "version": "1.0.0",
+  "description": "Christian Varisco Official website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CVarisco/CVarisco.github.io.git"
+  },
+  "author": "Christian Varisco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CVarisco/CVarisco.github.io/issues"
+  },
+  "homepage": "https://github.com/CVarisco/CVarisco.github.io#readme",
+  "scripts": {
+    "build":"npx tailwindcss build styles.css -o output.css"
+  },
+  "dependencies": {
+    "tailwindcss": "1.4.4"
+  }
+}
