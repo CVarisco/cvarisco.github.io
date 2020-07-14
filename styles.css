@@ -33,5 +33,5 @@
 }
 
 #hero {
-  height:calc(100vh - 94px)
+  min-height:calc(100vh - 94px)
 }
