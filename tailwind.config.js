@@ -1,12 +1,12 @@
 module.exports = {
-  purge:{
+  purge: {
     enabled: true,
-    content:['./*.html']
+    content: ["./*.html"],
   },
   theme: {
     fontFamily: {
-      heading:['SofiaPro', 'sans-serif'],
-      body: ['Hind', 'sans-serif'],
+      heading: ["SofiaPro", "sans-serif"],
+      body: ["Hind", "sans-serif"],
     },
-  }
-}
+  },
+};

@@ -5,37 +5,52 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Hind';
-  src: url('fonts/Hind-SemiBold.ttf') format('truetype');
+  font-family: "Hind";
+  src: url("fonts/Hind-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Hind';
-  src: url('fonts/Hind-Regular.ttf') format('truetype');
+  font-family: "Hind";
+  src: url("fonts/Hind-Regular.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'SofiaPro';
-  src: url('fonts/SofiaProSemiBold.ttf') format('truetype');
+  font-family: "SofiaPro";
+  src: url("fonts/SofiaProSemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'SofiaPro';
-  src: url('fonts/SofiaProBold.ttf') format('truetype');
+  font-family: "SofiaPro";
+  src: url("fonts/SofiaProBold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 #hero {
-  min-height:calc(100vh - 94px)
+  height: calc(100vh - 94px);
+}
+
+.blink {
+  animation: blink-animation 1.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
